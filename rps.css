@@ -1,0 +1,58 @@
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.h1 {
+    color: white;
+}
+.images {
+    max-width: 800px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+.images img {
+    border: 4px whitesmoke solid;
+    width: 40px;
+    border-radius: 50%;
+    padding: 5%;
+}
+
+.picked {
+    display: flex;
+    flex-grow: row nowrap;
+    gap: 2rem;
+}
+
+.picked p {
+    color:white
+}
+.picked img {
+    width: 50px;
+    
+}
+
+.picked__div {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: .5rem;
+}
+
+.history, .result {
+    color: white;
+}
+.result {
+    color: white;
+    font-size: 2rem;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+}

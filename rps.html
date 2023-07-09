@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-P-S</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+
+    <h1 class="h1">Rock Paper Scissors</h1>
+    <div class="images">
+        <img src="images/rock.png" alt="rock" onclick="
+            document.querySelector('.userpic').src=`images/rock.png`;
+            rps('images/rock.png');
+            "> 
+
+       <img src="images/paper.png" alt="paper" onclick="
+       document.querySelector('.userpic').src=`images/paper.png`;
+       rps('images/paper.png');
+       "> 
+        <img src="images/scissors.png" alt="scissors" onclick="
+        document.querySelector('.userpic').src=`images/scissors.png`;
+        rps('images/scissors.png')
+        ">
+    </div>
+    
+   /*  rps('Rock');
+    rps('Paper');
+    rps('Scissors') */
+
+    <p class="result"></p>
+
+    <div class="picked">
+        <div class="picked__div">
+            <p>YOU</p>
+            <img src="images/que.png" alt="your picked" class="userpic">
+        </div>
+        <div class="picked__div">
+            <img src="images/que.png" alt="your picked" class="compic">
+            <p>Computer</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <p class="history"></p>
+
+    <br>
+    <button onclick="
+    reset();
+    ">Reset score</button>
+
+    <button class="autoplay" onclick="
+    
+    auto();
+
+    ">Auto Play</button>
+
+    
+    <script src="rps.js"></script>
+</body>
+</html>
